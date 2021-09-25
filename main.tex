@@ -1,0 +1,107 @@
+\documentclass{beamer}
+
+\usetheme{Boadilla}
+
+\title{EE5600 PROJECT PRESENTATION}
+\author{Namrata Mishra}
+\institute{Indian Institute of Technology, Hyderabad}
+\date{\today}
+\begin{document}
+\begin{frame}
+\titlepage
+\end{frame}
+\begin{frame}
+\frametitle{Table of Contents}
+\tableofcontents
+\begin{block}{Contents}
+Introduction\\ 
+Process \\
+Architecture Model\\
+Motivation \\
+Result\\
+Conclusion\\
+\end{block}
+\end{frame}
+\begin{frame}
+\frametitle{INTRODUCTION}
+
+This is a short project on Speech Command Recognition.
+Here you have to generate data using your own recorded commands are "Forward","Back","Left","Right","Stop". Set the sampling rate of the recorded voice commands at 16 KHz and generate total 80 utterances of each command.Trim the samples to 1 second.
+You can use any architecture to recognize the speech commands, you have to fix the hyper-parameters so that the accuracy can be increased. Summarize the model architecture as well as the hyper-parameters.
+Use 25\% of samples for testing and rest for training the model.
+
+\end{frame}
+
+\begin{frame}
+\frametitle{PROCESS}
+\begin{enumerate}
+ \item Generating data using appropriate voice recording software 
+  \item Adding this data to a particular path in Google drive
+  \item Loading the data into Colab and Importing required libraries
+  \item Splitting data into Train and Test
+  \item Checking Model Summary
+  \item Fitting the model on to the training and validation data using model.fit()
+  \item Calculating accuracy of the model
+  \item Comparing different plots(Accuracy vs Epochs) obtained by changing hyper parameters
+\end{enumerate}
+\end{frame}
+\begin{frame}
+\frametitle{ARCHITECTURE MODEL}
+\begin{figure}
+    \centering
+    \includegraphics[scale=0.26]{model.png}
+    \caption{Model}
+    \label{fig:my_label}
+\end{figure}
+\end{frame}
+\begin{frame}
+\frametitle{MOTIVATION}   
+ \begin{enumerate}
+ \item For generating data Audacity software give better accuracy
+ \item Google Colab is best environment to write and execute code in python
+ \item It is easily save a copy in github
+ \item Easily imports all required libraries
+ \item Easy to run the model
+ \end{enumerate}
+\end{frame}
+\begin{frame}
+  \frametitle{RESULT} 
+  \begin{enumerate}
+      \item Easily obtained the accurate result by using best software and model 
+      \item By changing different hyper parameters we get accurate plot
+  \end{enumerate}
+  \begin{figure}
+      \centering
+      \includegraphics[scale=0.2]{result.png}
+      \includegraphics[scale=0.2]{result1.png}
+      \includegraphics[scale=0.2]{result2.png}
+      \includegraphics[scale=0.2]{result3.png}
+      \includegraphics[scale=0.2]{result4.png}
+      \includegraphics[scale=0.2]{result5.png}
+      \caption{Plot obtained from Colab}
+      \label{fig:my_label}
+  \end{figure}
+\end{frame}
+\begin{frame}
+ \frametitle{CONCLUSION}   
+ \begin{enumerate}
+ 
+ \item Accuracy of the model can be increased by changing the hyper parameters such as:
+ 
+ \begin{itemize}
+    \item Number of layers and number of neurons in each layer
+    \item Activation functions
+    \item Batch size
+    \item Number of epochs, etc.
+    
+    \end{itemize}
+    
+    \item Training loss is decreasing but the val loss is fluctuating.
+    \item Easy to run the Model
+    \item Easy import dataset and copy to github
+    \item Get accurate result by using Colab to run program
+    \item Audacity Software give better variation in voice to calculate accurate result.
+ 
+\end{enumerate}
+\end{frame}
+\end{document}
